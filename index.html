@@ -1,31 +1,541 @@
+<html>
 
-<html>	
-  <head>	
-    <meta charset="UTF-8">	
-    <title>Audio samples from "PAMA-TTS: Progression-Aware Monotonic Attention for Stable Seq2Seq TTS With Accurate Phoneme Duration Control"</title>	
-    <link rel="stylesheet" type="text/css" href="stylesheet.css"/>	
-    <link rel="shortcut icon" href="mi.png">	
-  </head>	
-  <body>	
-    <div>	
-      <article>	
-        <header>	
-          <h1>Audio samples from "PAMA-TTS: Progression-Aware Monotonic Attention for Stable Seq2Seq TTS With Accurate Phoneme Duration Control"</h1>	
-        </header>	
-      </article>	
+<head>
+  <meta charset="UTF-8">
+  <title>Audio samples from "PAMA-TTS: Progression-Aware Monotonic Attention for Stable Seq2Seq TTS With Accurate
+    Phoneme Duration Control"</title>
+  <link rel="stylesheet" type="text/css" href="stylesheet.css" />
+  <link rel="shortcut icon" href="mi.png">
+</head>
 
-      <p><b>Paper: </b><a href="https://">arXiv</a></p>	
-      <p><b>Authors: </b>Yunchao He, Jian Luan, Yujun Wang</p>	
+<body>
+  <div>
+    <article>
+      <header>
+        <h1>Audio samples from "PAMA-TTS: Progression-Aware Monotonic Attention for Stable Seq2Seq TTS With Accurate
+          Phoneme Duration Control"</h1>
+      </header>
+    </article>
 
-      <p><b>Abstract:</b>	
-       Sequence expansion between encoder and decoder is a critical challenge in sequence-to-sequence TTS. Attention-based methods achieve great naturalness but suffer from the unstable issues like missing and repeating phonemes, not to mention accurate local duration control. Duration-informed methods, on the contrary, seem easy to adjust phoneme duration but show obvious degradation in speech naturalness. This paper proposes PAMA-TTS to address the problem. It takes the advantage of both flexible attention and explicit duration model. Based on a monotonic attention mechanism, PAMA-TTS also leverages the token duration and countdown information, i.e. in how many frames the present phoneme will end. They help the attention to move forward along token sequence in a soft but reliable control. 
- </p>	
+    <p><b>Paper: </b><a href="https://">arXiv</a></p>
+    <p><b>Authors: </b>Yunchao He, Jian Luan, Yujun Wang</p>
 
-      <h2>Female Speaker</h2>	
-      <p><i>Random sample from test set.</i></p>	
+    <p><b>Abstract:</b>
+      Sequence expansion between encoder and decoder is a critical challenge in sequence-to-sequence TTS.
+      Attention-based methods achieve great naturalness but suffer from the unstable issues like missing and repeating
+      phonemes, not to mention accurate local duration control. Duration-informed methods, on the contrary, seem easy to
+      adjust phoneme duration but show obvious degradation in speech naturalness. This paper proposes PAMA-TTS to
+      address the problem. It takes the advantage of both flexible attention and explicit duration model. Based on a
+      monotonic attention mechanism, PAMA-TTS also leverages the token duration and countdown information, i.e. in how
+      many frames the present phoneme will end. They help the attention to move forward along token sequence in a soft
+      but reliable control.
+    </p>
 
-       
+    <h2>Female Speaker</h2>
 
-    </div>	
-  </body>	
-</html>	
+    <h3>Recordings</h3>
+    <table>
+      <tbody>
+        <tr>
+          <td>1:</td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="gt/kefu/000001.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+        <tr>
+          <td>2:</td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="gt/kefu/000002.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+        <tr>
+          <td>3:</td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="gt/kefu/000003.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+        <tr>
+          <td>4:</td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="gt/kefu/000004.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+        <tr>
+          <td>5:</td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="gt/kefu/000005.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Synthesized Speech</h3>
+    <p><i>Random sample from test set.</i></p>
+
+    <table>
+      <tbody>
+        <thead>
+          <tr>
+            <th>
+              <font color="orange">Proposed PAMA-TTS</font>
+            </th>
+            <th>Tacotron-length-regulator (TLR)</th>
+            <th>Tacotron-stepwise (TSW)</th>
+          </tr>
+        </thead>
+        <tr>
+          <td colspan="3"><span>1: 周霖先生您好，我这边是《小米贷款》审核机器人-小融，现在我们这边有一个为您提额的活动，需要您补充信息，请问您现在方便吗？</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="kefu/C proposed/00036.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="kefu/A baseline1 length regulator/00036.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="kefu/B baseline2 stepwise/00036.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+        <tr>
+          <td colspan="3"><span>2: 好的，您目前正常经营的公司名称是下面哪一个，一、河北商玛商贸有限公司；二、汕尾市城区正力货运代理店；三、南京雄起服饰有限公司；四、以上都不是，请您选择一二三四任意一个
+            </span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="kefu/C proposed/00037.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="kefu/A baseline1 length regulator/00037.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="kefu/B baseline2 stepwise/00037.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+        <tr>
+          <td colspan="3"><span>3: 请问您公司于哪一年成立？</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="kefu/C proposed/00038.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="kefu/A baseline1 length regulator/00038.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="kefu/B baseline2 stepwise/00038.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+        <tr>
+          <td colspan="3"><span>4: 好的，您的主营业务是什么？</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="kefu/C proposed/00039.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="kefu/A baseline1 length regulator/00039.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="kefu/B baseline2 stepwise/00039.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+        <tr>
+          <td colspan="3"><span>5: 好的，您本年度每个月平均销售额是下面哪一个，一、小于等于10万；二、11万（至）30万；三、31万（至）50万；四、50万以上，以上请您选择一二三四任意一个</span>
+          </td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="kefu/C proposed/00040.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="kefu/A baseline1 length regulator/00040.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="kefu/B baseline2 stepwise/00040.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+        <tr>
+          <td colspan="3"><span>6: 好的，您上个月的销售额是多少万元？</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="kefu/C proposed/00041.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="kefu/A baseline1 length regulator/00041.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="kefu/B baseline2 stepwise/00041.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+        <tr>
+          <td colspan="3"><span>7: 抱歉，我没有听清，方便重复一下么？？？？？？？？？</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="kefu/C proposed/00042.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="kefu/A baseline1 length regulator/00042.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="kefu/B baseline2 stepwise/00042.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+        <tr>
+          <td colspan="3"><span>8: 好的，您的毛利是下面哪一个？一、小于等于百分之5；二、百分之6（至）百分之8；
+              三、百分之9（至）百分之10；四、百分之10以上，以上请您选择一二三四任意一个</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="kefu/C proposed/00043.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="kefu/A baseline1 length regulator/00043.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="kefu/B baseline2 stepwise/00043.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+        <tr>
+          <td colspan="3"><span>9: 好的，最后请您说下您的身份证号码后四位？</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="kefu/C proposed/00044.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="kefu/A baseline1 length regulator/00044.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="kefu/B baseline2 stepwise/00044.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+        <tr>
+          <td colspan="3"><span>10: 好的非常感谢，本次已经核实身份完毕，祝您生活愉快，再见。</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="kefu/C proposed/00045.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="kefu/A baseline1 length regulator/00045.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="kefu/B baseline2 stepwise/00045.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <h2>Male Speaker</h2>
+
+    <h3>Recordings</h3>
+
+    <table>
+      <tbody>
+        <tr>
+          <td>1:</td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="gt/m88/100001.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+        <tr>
+          <td>2:</td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="gt/m88/100002.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+        <tr>
+          <td>3:</td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="gt/m88/100003.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+        <tr>
+          <td>4:</td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="gt/m88/100004.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+        <tr>
+          <td>5:</td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="gt/m88/100005.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h3>Synthesized Speech</h3>
+    <p><i>Random sample from test set.</i></p>
+
+    <table>
+      <tbody>
+        <thead>
+          <tr>
+            <th>
+              <font color="orange">Proposed PAMA-TTS</font>
+            </th>
+            <th>Tacotron-length-regulator (TLR)</th>
+            <th>Tacotron-stepwise (TSW)</th>
+          </tr>
+        </thead>
+        <tr>
+          <td colspan="3"><span>1: 在呢，谢谢你在茫茫人海中找到我，想我了记得叫我哦</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="m88/C proposed/00002.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="m88/A baseline1 length regulator/00002.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="m88/B baseline2 stepwise/00002.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+        <tr>
+          <td colspan="3"><span>2: 哎呀，刚才在神游，你说到哪里了
+            </span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="m88/C proposed/00004.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="m88/A baseline1 length regulator/00004.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="m88/B baseline2 stepwise/00004.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+        <tr>
+          <td colspan="3"><span>3: 善良，开朗，热情，乐于助人的小朵拉来咯 </span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="m88/C proposed/00005.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="m88/A baseline1 length regulator/00005.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="m88/B baseline2 stepwise/00005.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+        <tr>
+          <td colspan="3"><span>4: 噫！怎么会有这种要求？好吧，既然你要求了，我就照做，放的不好听还请见谅</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="m88/C proposed/00007.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="m88/A baseline1 length regulator/00007.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="m88/B baseline2 stepwise/00007.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+        <tr>
+          <td colspan="3"><span>5: 股市行情如下，上证指数报2763.99点，下跌: 百分之0.60</span>
+          </td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="m88/C proposed/00013.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="m88/A baseline1 length regulator/00013.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="m88/B baseline2 stepwise/00013.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+        <tr>
+          <td colspan="3"><span>6: 等你想让小爱出来的时候再吼我，我会24小时待命的</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="m88/C proposed/00018.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="m88/A baseline1 length regulator/00018.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="m88/B baseline2 stepwise/00018.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+        <tr>
+          <td colspan="3"><span>7: 呜呜呜，看来是小爱的技能修炼的还不够，惹您不开心啦！</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="m88/C proposed/00021.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="m88/A baseline1 length regulator/00021.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="m88/B baseline2 stepwise/00021.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+        <tr>
+          <td colspan="3"><span>8: 你怎么才来找我玩儿啊，我今天都快无聊死了。</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="m88/C proposed/00030.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="m88/A baseline1 length regulator/00030.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="m88/B baseline2 stepwise/00030.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+        <tr>
+          <td colspan="3"><span>9: 早上好呀！今天要多吃肉，也要多吃蔬菜和水果！荤素搭配，身体才会长得壮哦！</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="m88/C proposed/00032.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="m88/A baseline1 length regulator/00032.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="m88/B baseline2 stepwise/00032.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+        <tr>
+          <td colspan="3"><span>10: 好啊，为你播放那英的《回声》</span></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="m88/C proposed/00033.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="m88/A baseline1 length regulator/00033.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="m88/B baseline2 stepwise/00033.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+
+      </tbody>
+    </table>
+
+    <h2>
+      Speed Controlling of PAMA-TTS
+    </h2>
+
+    <h3>Fast speed: duration x0.75</h3>
+
+    <table>
+      <tbody>
+        <thead>
+          <tr>
+            <th>
+              Female
+            </th>
+            <th>
+              Male
+            </th>
+          </tr>
+        </thead>
+        <tr>
+          <td><audio controls="">
+              <source src="duration control/kefu x0.75/00036.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="duration control/m88 x0.75/00002.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="duration control/kefu x0.75/00037.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="duration control/m88 x0.75/00004.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="duration control/kefu x0.75/00038.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="duration control/m88 x0.75/00005.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+      </tbody>
+    </table>
+
+
+    <h3>Slow speed: duration x1.5</h3>
+    <table>
+      <tbody>
+        <thead>
+          <tr>
+            <th>
+              Female
+            </th>
+            <th>
+              Male
+            </th>
+          </tr>
+        </thead>
+        <tr>
+          <td><audio controls="">
+              <source src="duration control/kefu x1.5/00036.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="duration control/m88 x1.5/00002.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="duration control/kefu x1.5/00037.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="duration control/m88 x1.5/00004.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="duration control/kefu x1.5/00038.wav" type="audio/wav">
+            </audio></td>
+          <td><audio controls="">
+              <source src="duration control/m88 x1.5/00005.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+      </tbody>
+    </table>
+
+  </div>
+</body>
+
+</html>
