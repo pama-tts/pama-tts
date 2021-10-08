@@ -2,8 +2,8 @@
 
 <head>
   <meta charset="UTF-8">
-  <title>Audio samples from "PAMA-TTS: Progression-Aware Monotonic Attention for Stable Seq2Seq TTS With Accurate
-    Phoneme Duration Control"</title>
+  <title>Audio samples from "PAMA-TTS: PROGRESSION-AWARE MONOTONIC ATTENTION FOR STABLE SEQ2SEQ TTS WITH ACCURATE
+    PHONEME DURATION CONTROL"</title>
   <link rel="stylesheet" type="text/css" href="stylesheet.css" />
   <link rel="shortcut icon" href="mi.png">
 </head>
@@ -12,8 +12,8 @@
   <div>
     <article>
       <header>
-        <h1>Audio samples from "PAMA-TTS: Progression-Aware Monotonic Attention for Stable Seq2Seq TTS With Accurate
-          Phoneme Duration Control"</h1>
+        <h1>Audio samples from "PAMA-TTS: PROGRESSION-AWARE MONOTONIC ATTENTION FOR STABLE SEQ2SEQ TTS WITH ACCURATE
+          PHONEME DURATION CONTROL"</h1>
       </header>
     </article>
 
@@ -22,16 +22,18 @@
 
     <p><b>Abstract:</b>
       Sequence expansion between encoder and decoder is a critical challenge in sequence-to-sequence TTS.
-      Attention-based methods achieve great naturalness but suffer from the unstable issues like missing and repeating
-      phonemes, not to mention accurate local duration control. Duration-informed methods, on the contrary, seem easy to
+      Attention-based methods achieve great naturalness but suffer from unstable issues like missing and repeating
+      phonemes, not to mention accurate duration control. Duration-informed methods, on the contrary, seem to easily
       adjust phoneme duration but show obvious degradation in speech naturalness. This paper proposes PAMA-TTS to
-      address the problem. It takes the advantage of both flexible attention and explicit duration model. Based on a
-      monotonic attention mechanism, PAMA-TTS also leverages the token duration and countdown information, i.e. in how
-      many frames the present phoneme will end. They help the attention to move forward along token sequence in a soft
-      but reliable control.
+      address the problem. It takes the advantage of both flexible attention and explicit duration model. Based on
+      monotonic attention mechanism, PAMA-TTS also leverages token duration and relative position of frame, especially
+      countdown information, i.e. in how many future frames the present phoneme will end. They help the attention to
+      move forward along token sequence in a soft but reliable control. Experimental results prove that PAMA-TTS
+      achieves the highest naturalness, while has on-par or even better duration controllability than the
+      duration-informed model.
     </p>
 
-    <h2>Female Speaker</h2>
+    <h2>Comparison among systems</h2>
 
     <h3>Recordings</h3>
     <table>
@@ -240,6 +242,7 @@
       </tbody>
     </table>
 
+    <!--
     <h2>Male Speaker</h2>
 
     <h3>Recordings</h3>
@@ -448,6 +451,7 @@
 
       </tbody>
     </table>
+    -->
 
     <h2>
       Speed Controlling of PAMA-TTS
@@ -455,6 +459,7 @@
 
     <h3>Fast speed: duration x0.75</h3>
 
+    <!--
     <table>
       <tbody>
         <thead>
@@ -493,9 +498,36 @@
         </tr>
       </tbody>
     </table>
-
+  -->
+    <table>
+      <tbody>
+        <thead>
+          <tr>
+            <th>
+              Samples
+            </th>
+          </tr>
+        </thead>
+        <tr>
+          <td><audio controls="">
+              <source src="duration control/kefu x0.75/00036.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="duration control/kefu x0.75/00037.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="duration control/kefu x0.75/00038.wav" type="audio/wav">
+            </audio></td>
+        </tr>
+      </tbody>
+    </table>
 
     <h3>Slow speed: duration x1.5</h3>
+    <!--
     <table>
       <tbody>
         <thead>
@@ -531,6 +563,37 @@
           <td><audio controls="">
               <source src="duration control/m88 x1.5/00005.wav" type="audio/wav">
             </audio></td>
+        </tr>
+      </tbody>
+    </table>
+  -->
+    <table>
+      <tbody>
+        <thead>
+          <tr>
+            <th>
+              Samples
+            </th>
+
+          </tr>
+        </thead>
+        <tr>
+          <td><audio controls="">
+              <source src="duration control/kefu x1.5/00036.wav" type="audio/wav">
+            </audio></td>
+
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="duration control/kefu x1.5/00037.wav" type="audio/wav">
+            </audio></td>
+
+        </tr>
+        <tr>
+          <td><audio controls="">
+              <source src="duration control/kefu x1.5/00038.wav" type="audio/wav">
+            </audio></td>
+
         </tr>
       </tbody>
     </table>
